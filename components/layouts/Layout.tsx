@@ -14,6 +14,11 @@ const Layout: FC<props> = ({children, title}) => {
                 <meta name="author" content="Diego Herrera"/>
                 <meta name="description" content="Información sobres el pokemon"/>
                 <meta name="keywords" content="pokemon, pokedex"/>
+
+                <meta property="og:title" content={`Info about ${title}`} />
+                <meta property="og:description" content={`Info about ${title}`} />
+                {/*<meta property="og:image" content="loca" />*/}
+
             </Head>
 
             <Navbar/>
